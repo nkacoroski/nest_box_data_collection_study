@@ -1,14 +1,39 @@
-# Bird Nest Box Data Collection Study
-This repository contains work for a study on manual and eNest assisted monitoring of bird nest boxes. Manual monitoring of bird nests can disturb nesting birds, or have an inconsistent and small observation window. Monitoring devices such as eNest, could decrease negative impacts on nest sites while improving data quality by providing continuous observation throughout the nesting season. The experimental design and analysis of this study may be found in the bird nest box study notebook.
+# A Comparison of Manual and eNest Assisted Monitoring of Bird Nest Boxes
+## Abstract
+This repository contains work for a study on manual and eNest assisted monitoring of chickadee (**Poecile sp.**) nest boxes following the NestWatch protocol by the Cornell Lab of Ornithology. Community science projects such as NestWatch expand the capability of researchers to collect data and increase interest in science and the natural world by providing opportunities for volunteers to get involved. Manual monitoring of bird nests through community science, however, faces challenges such as nest disturbance, poor data quality, and volunteer commitment limitations. Technology assisted monitoring of nest sites with devices such as eNest, a bird nest box data collection system, might address these concerns by providing continuous observation throughout the nesting season, and enrich data analysis through additional information from environmental metrics. Designed to be non-invasive, eNest has been field-tested in approximately 50 nest boxes. By comparing eNest to traditional bird nest monitoring methods, this study will also provide initial research on the suitability of eNest in bird nest boxes, and the integration of technology assisted nest box monitoring into community science project projects like NestWatch.In this repository is the work for the [experimental design](experimental_design.ipynb), [data submission app](data_submission_app.ipynb), and [statistical analysis](statistical_analysis.ipynb) of the study.
 
-## Abstract (1-2 PP, problem, methodology, findings, recommendation)
-The purpose of this study is to compare manual and eNest assisted monitoring of bird nest boxes following the NestWatch protocol by The Cornell Lab of Ornithology. Manual data collection consists of identifying nest sites, then visiting the sites every 3-7 days to collect data on nest attempts. At the end of each nest attempt, the volunteer records a nest summary. NestWatch volunteers are trained to minimize their impact on nests, but disturbances may still occur. It can also be difficult for volunteers to visit nests frequently and consistently, which can decrease the quality of data collected and limit volunteer participation. 
+## Project Understanding
+The study will take place in 2020 in the Greater Seattle Area, WA. Volunteers will be recruited from local Audubon Society Chapters between October 2019 and February 2020. All volunteers will complete NestWatch training for monitoring nest sites and using the eNest app. For the purpose of this study, nest sites are limited to chickadee nest boxes that will be provided to volunteers along with all eNest equipment (devices, micro SD cords). Data collection will begin March 1st, 2020. 
 
-Using technology assisted monitoring with eNest, a nest box data collection system, may help mitigate these challenges by reducing number of visits necessary to the nest while increasing the observation window through continuous data collection of nest activity. The eNest device is installed in nests and will operate on battery charge or solar power throughout the entire nesting season. It collects 1-5 still images per day, movement, location (latitude, longitude), and the following environmental metrics: temperature, light, air pressure, humidity. The inclusion of these environmental metrics will expand the breadth of analysis possible for nesting bird behavior. At the end of the breeding season, the eNest device is collected and data is transferred to a computer using a micro SD cord. The data will be uploaded and analyzed using an online dashboard. Once volunteers have identified important nest events, they may submit that information to the NestWatch database.
+### Manual Monitoring
+Manual data collection consists of visiting the nest box every 3-7 days to collect data on nest attempts. At the end of each nest attempt, the volunteer records a nest summary. For more information see the [Understanding NestWatch Data](https://nestwatch.org/learn/how-to-nestwatch/understanding-nestwatch-data/) on the NestWatch website.
 
-Thus far eNest has been successfully tested in approximately 50 nest boxes, and was specifically designed to be a non-invasive monitoring device. No research has yet been done, however, to compare eNest assisted to manual monitoring of bird nest sites. This study will provide initial evidence on the viability of eNest assisted monitoring for bird nest boxes, and its integration into the NestWatch community science project. 
+### eNest Assisted Monitoring
+eNest assisted monitoring consists of installing the eNest device at the beginning of the nesting season, and then analyzing the data for important nest events afterwards using the eNest App. 
 
-## Statistical Analysis
+The eNest device will run on battery or solar power for the entire nesting season, eliminating the need for any visits to the nest. It will collect 1-5 images a day, GPS coordinates, movement in seconds of motion per minute, humidity, temperature, light and air pressure. At the end of the nesting season, the volunteer will collect the eNest device, transfer data to a computer using a micro SD cord, and upload it to the eNest App. Using the eNest App, volunteers will visualize their data and identify relevant information to submit to NestWatch.  
+
+
+## [Experimental Design](experimental_design.ipynb)
+
+### Power Analysis
+### Sample Size
+All attempts will be made to randomize manual and eNest assisted monitoring groups, however, since this is a volunteer-based study there may be certain volunteers who can only commit to a specific group. 
+
+## [Data Submission App](data_submission_app.ipynb)
+The data submission app will be an enhanced version of the [eNest Dashboard](https://github.com/nkacoroski/animal_data_science_shiny_app), a data visualization app currently in development. Additional features will include a submission form for the NestWatch database.
+
+
+## [Data Analysis](data_analysis.ipynb)
+To be determined once data collection is completed in 2020. 
+
+### Exploratory Data Analysis
+Exploratory data analysis will be conducted to provide initial descriptions and visualizations of important nest event statistics.
+
+### Statistical Analysis
+Exploratory questions will evaluate if there is any significant difference between important nest event statistics between manual and eNest assisted monitoring. Follow-up questions will be used to further characterize any significant differences.
+
+Exploratory Statistical Questions
 1. Is there a significant difference between dates of nesting attempts recorded by manual and eNest assisted monitoring?
 2. Is there a significant difference between number of nesting attempts recorded by manual and eNest assisted monitoring?
 3. Is there a significant difference between species recorded by manual and eNest assisted monitoring?
@@ -26,3 +51,9 @@ Thus far eNest has been successfully tested in approximately 50 nest boxes, and 
 14. Is there a significant difference between dates of final nest fate recorded by manual and eNest assisted monitoring?
 15. Is there a significant difference in fledge dates recorded by manual and eNest assisted monitoring?
 16. Is there a significant difference between host species count totals recorded by manual and eNest assisted monitoring?
+
+## Results
+To be determined.
+
+## Recommendations
+To be determined.
