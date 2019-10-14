@@ -33,7 +33,9 @@ To allow volunteers to visualize and interpret data for NestWatch, an additional
 To determine an appropriate experimental design, I investigated conducting a series of independent t-tests with a Bonferroni correction to address multiple comparisons or using a Multivariate Analysis of Variance (MANOVA) to compare manual and eNest assisted monitoring of nest sites. The series of independent t-tests evaluates differences between manual and eNest assisted monitoring at the level of each dependent variable, the MANOVA allows for comparison in aggregate, treating all 14 dependent variables as a single vector. 
 
 For both types of tests, I used G\*Power, a statistical power analysis program, to calculate the relationship between total sample size and power at small, medium, and large effect sizes with alpha set at the standard 0.05. I graphed the data using a total sample size range of 30 to 100, because that is our target range for volunteer recruitment. 
+
 ![power analysis graph](power_analysis.png)
+
 According to the *a priori* power analyses, only the independent t-test achieves a power of 0.8 with a total sample size less than 100. The minimum total sample size is 52 (26 nest boxes per group), and only large effects are detected. I also investigated reducing the number of dependent variables for a MANOVA. The maximum number of variables possible is 7, with a total sample size of 98. Since all of the dependent variables are important, and getting a total sample size of 98 might be challenging, I recommend going with the series of independent t-tests and using the Bonferroni correction to account for multiple comparisons. I plan to investigate using Bayesian and computationally intensive methods as other alternatives.
 
 
